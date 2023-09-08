@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="background" parent="Theme.BookApp">
+        <item name="android:background">@drawable/books</item>
+    </style>
+</resources>
