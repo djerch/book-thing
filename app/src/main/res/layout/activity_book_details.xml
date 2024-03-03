@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,7 +7,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:background="@drawable/round"
         android:orientation="vertical">
@@ -24,7 +22,7 @@
                 android:layout_width="130dp"
                 android:layout_height="160dp"
                 android:layout_margin="18dp"
-                android:contentDescription="book image"/>
+                android:contentDescription="@string/book_image_placeholder"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -36,7 +34,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="4dp"
-                    android:text="Author(s)"
+                    android:text="@string/details_authors_text"
                     android:textColor="@color/black"
                     android:textSize="15sp"
                     android:textStyle="bold"/>
@@ -47,7 +45,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:padding="4dp"
-                    android:text="authors"
+                    android:text="@string/authors_placeholder"
                     android:textColor="@color/black"
                     android:textSize="15sp"/>
 
@@ -55,7 +53,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="4dp"
-                    android:text="Publisher"
+                    android:text="@string/details_publisher_text"
                     android:textColor="@color/black"
                     android:textSize="15sp"
                     android:textStyle="bold"/>
@@ -66,7 +64,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:padding="4dp"
-                    android:text="publisher"
+                    android:text="@string/publisher_placeholder"
                     android:textColor="@color/black"
                     android:textSize="15sp"/>
 
@@ -76,7 +74,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:padding="4dp"
-                    android:text="number of pages"
+                    android:text="@string/number_of_pages_placeholder"
                     android:textColor="@color/black"
                     android:textSize="15sp"/>
 
@@ -86,7 +84,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:padding="4dp"
-                    android:text="publish date"
+                    android:text="@string/publish_date_placeholder"
                     android:textColor="@color/black"
                     android:textSize="15sp"/>
 
@@ -100,7 +98,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:padding="4dp"
-            android:text="title"
+            android:text="@string/details_title_placeholder"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"/>
@@ -112,7 +110,7 @@
             android:layout_margin="8dp"
             android:layout_marginTop="4dp"
             android:padding="4dp"
-            android:text="subtitle"
+            android:text="@string/details_subtitle_placeholder"
             android:textColor="@color/black"
             android:textSize="12sp" />
 
@@ -122,7 +120,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:padding="4dp"
-            android:text="description"
+            android:text="@string/details_description_placeholder"
             android:textColor="@color/black"
             android:textSize="12sp" />
 
@@ -139,8 +137,9 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:text="Preview"
-                android:textAllCaps="false"/>
+                android:text="@string/preview_button_text"
+                android:textAllCaps="false"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/btn_add_to_list"
@@ -148,9 +147,10 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:text="Add to list"
+                android:text="@string/add_to_list_button_text"
                 android:textAllCaps="false"
-                android:visibility="visible"/>
+                android:visibility="visible"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/btn_remove_from_list"
@@ -158,9 +158,10 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:text="Remove from list"
+                android:text="@string/remove_from_list_button_text"
                 android:textAllCaps="false"
-                android:visibility="gone"/>
+                android:visibility="gone"
+                style="?android:attr/buttonBarButtonStyle" />
 
         </LinearLayout>
 
